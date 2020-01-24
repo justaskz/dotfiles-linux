@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 SHEWILL_HOME="$HOME/.shewill"
 
