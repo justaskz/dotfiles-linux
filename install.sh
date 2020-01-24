@@ -2,7 +2,7 @@
 
 function run {
   cp "dotfiles/.zshrc" "$HOME/.zshrc"
-  cp -r "shewill" "$HOME/.shewill"
+  cp -R shewill/. $HOME/.shewill
 }
 
 $@

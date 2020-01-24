@@ -1,2 +1,2 @@
 install:
-	@ zsh install.zsh
+	@ bash install.sh run
