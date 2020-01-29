@@ -16,3 +16,13 @@ alias gib="git branch --sort=-committerdate"
 alias gibb="git branch"
 alias gifp="git push -f origin HEAD"
 alias gisave="git add .; git commit -m wip"
+
+#################################################
+## TMUX
+#################################################
+alias tmc="tmux new -s"
+alias tma="tmux attach -t"
+alias tmd="tmux detach"
+alias tmk="tmux kill-session -t"
+alias tml="tmux list-sessions"
+alias tms="tmux source-file ~/.tmux.conf"

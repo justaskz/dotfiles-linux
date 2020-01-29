@@ -1,0 +1,6 @@
+[user]
+  name = Justas Kazakauskas
+  email = justas.kazakauskas@tesonet.com
+
+[core]
+  editor = /usr/bin/vim
