@@ -29,3 +29,14 @@ fzf-file-widget_mod() {
 
 zle     -N   fzf-file-widget_mod
 bindkey '^P' fzf-file-widget_mod
+
+# search inventory file with fzf
+_fzf_complete_ssh() {
+  _fzf_complete "--multi --reverse" "$@" < <(cat /home/justas/repos/inventory)
+}
+
+[ -n "$BASH" ] && complete -F _fzf_complete_ssh -o default -o bashdefault ssh
+
+_fzf_complete_ssh_post() {
+  awk '{print $NF}'
+}
