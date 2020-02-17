@@ -9,5 +9,9 @@ function ssh-agent-start {
 }
 
 function refresh_inventory {
-  find /home/justas/repos/ansible/inventory* -type f -exec cat {} \; | grep -Po ".*ansible_host=[\d\.]*" | sed 's/ansible_host=//' > /home/justas/repos/inventory
+  find /home/justas/repos/ansible/inventory* -type f -exec cat {} \; | \
+    grep -Po ".*ansible_host=[\d\.]*" | \
+    sed 's/ansible_host=//' |
+    sed 's/^#//' | \
+    sort -u > /home/justas/repos/inventory
 }
