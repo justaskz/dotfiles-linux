@@ -2,8 +2,15 @@
 
 FZF_HOME="$HOME/opt/fzf"
 
-source "$FZF_HOME/shell/completion.zsh"
-source "$FZF_HOME/shell/key-bindings.zsh"
+if [ -n "$BASH_VERSION" ]; then
+  source "$FZF_HOME/shell/completion.bash"
+  source "$FZF_HOME/shell/key-bindings.bash"
+fi
+
+if [ -n "$ZSH_VERSION" ]; then
+  source "$FZF_HOME/shell/completion.zsh"
+  source "$FZF_HOME/shell/key-bindings.zsh"
+fi
 
 # CTRL+P show files and directories in current folder only
 __fsel_mod() {
@@ -27,8 +34,10 @@ fzf-file-widget_mod() {
   return $ret
 }
 
-zle     -N   fzf-file-widget_mod
-bindkey '^P' fzf-file-widget_mod
+if [ -n "$ZSH_VERSION" ]; then
+  zle     -N   fzf-file-widget_mod
+  bindkey '^P' fzf-file-widget_mod
+fi
 
 # search inventory file with fzf
 _fzf_complete_ssh() {
