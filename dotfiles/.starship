@@ -1,12 +1,12 @@
-prompt_order=[
-  "username",
-  "directory",
-  "git_branch",
-  "git_status",
-  "cmd_duration",
-  "line_break",
-  "character"
-]
+format = """\
+  $username\
+  $directory\
+  $git_branch\
+  $git_status\
+  $cmd_duration\
+  $line_break\
+  $character\
+"""
 
 [cmd_duration]
 min_time = 100
