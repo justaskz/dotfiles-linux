@@ -41,7 +41,7 @@ fi
 
 # search inventory file with fzf
 _fzf_complete_ssh() {
-  _fzf_complete "--multi --reverse" "$@" < <(cat /home/justas/repos/inventory)
+  _fzf_complete "--multi --reverse" "$@" < <(cat $HOME/repos/inventory)
 }
 
 [ -n "$BASH" ] && complete -F _fzf_complete_ssh -o default -o bashdefault ssh

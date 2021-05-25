@@ -17,6 +17,7 @@ function refresh {
   cp "dotfiles/.zshrc" "$HOME/.zshrc"
   cp "dotfiles/.starship" "$HOME/.starship"
   cp "dotfiles/.tmux.conf" "$HOME/.tmux.conf"
+  cp "dotfiles/.env" "$HOME/.env"
 
   cp -R shewill/. $HOME/.shewill
 }
