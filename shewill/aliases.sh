@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 alias src="source $HOME/.zshrc"
-alias repos="cd $MY_HOME/repos"
-alias a="cd $MY_HOME/repos/ansible"
+alias repos="cd $HOME/repos"
+alias a="cd $HOME/repos/ansible"
 
 alias ls="/bin/ls -lah --color"
 
