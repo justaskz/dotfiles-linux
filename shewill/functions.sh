@@ -6,6 +6,6 @@ function refresh_inventory {
     sed 's/^#.*//' | \
     sed 's/ansible_host=//' |
     sed '/^$/d' |
-    sed 's/\s/ juka@/' |
+    sed 's/\s/ root@/' |
     sort -u > $HOME/repos/inventory
 }
