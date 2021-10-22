@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# alias src="source $HOME/.zshrc"
+alias src="source $HOME/.bashrc"
 # alias src="source $HOME/.profile"
 alias repos="cd $HOME/repos"
 alias a="cd $HOME/repos/ansible"
