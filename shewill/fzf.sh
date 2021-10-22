@@ -47,5 +47,5 @@ _fzf_complete_ssh() {
 [ -n "$BASH" ] && complete -F _fzf_complete_ssh -o default -o bashdefault ssh
 
 _fzf_complete_ssh_post() {
-  awk '{print $NF}'
+  awk '{print $NF " -t \"sudo su -\""}'
 }
