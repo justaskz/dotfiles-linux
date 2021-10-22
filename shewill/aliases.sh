@@ -10,7 +10,7 @@ alias ls="/bin/ls -lah --color"
 #################################################
 ## GIT
 #################################################
-alias gis="git status -s"
+alias gis="git status -s -u"
 alias gic="git checkout"
 alias gip="git remote prune origin"
 alias gil="git log"
